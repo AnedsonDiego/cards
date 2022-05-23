@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+    background-image: url(img/4042486-fundo-azul-virtual-grátis-vetor.jpg);
+}
+
+main.cards{
+    display: flex;
+    padding: 30px;
+}
+
+
+.cards .card{
+    border-radius: 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 250px;
+    margin-right: 10px;
+    background-image: linear-gradient(to right, rgb(17, 87, 134), rgb(35, 104, 109));
+    max-height: 250px;
+    margin-left: 30px;
+    padding: 80px 65px;
+}
+
+.cards .card:first-child{
+    
+    margin-left: 0;
+}
+
+.cards .card .icon{
+    
+    width: 65px;
+    height: 64px;
+}
+
+.cards .card  img {
+    width: 100%;
+    
+    
+}
+
+.cards .card span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+.cards .card h3 {
+    margin-top: 5px;
+    color: white;
+    font-weight: normal;
+
+}
+
+.cards .card button{
+    margin-bottom: 0px;
+    margin-top: 2px;
+    color: white;
+    background-color: blue;
+    padding: 1.5rem 0.5rem;
+    padding-top: 15px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    cursor: pointer;
+    
+}
+
+@media (max-width:720px) {
+
+    body{
+        margin-top: 160px;
+    }
+
+    main.cards{
+        display: flex;
+        flex-direction: column;
+        min-height: 520px;
+        
+    }
+
+    .cards .card {
+        margin-top:0;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .cards .card:last-child{
+        margin-bottom: 0;
+    }
+    
+}
+
